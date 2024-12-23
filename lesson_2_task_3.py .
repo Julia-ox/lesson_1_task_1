@@ -1,0 +1,16 @@
+import math
+
+def square(side):
+    """
+    Вычисляет площадь квадрата.
+
+    :param side: Длина стороны квадрата
+    :return: Площадь квадрата, округленная вверх, если аргумент не целый
+    """
+    area = side * side
+    return math.ceil(area)
+
+# Пример использования
+print(square(5))        # 25
+print(square(4.2))      # 18 (округлено вверх)
+print(square(7.5))      # 57 (округлено вверх)
